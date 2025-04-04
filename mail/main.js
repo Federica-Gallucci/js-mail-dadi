@@ -27,7 +27,13 @@ for (let i = 0; i < emailList.length && isEmailFound !== true; i++) {
   if (currentEmail === userEmail) {
     //Email trovata
     isEmailFound = true;
-    alert("Email trovata. Puoi accedere alla festa!");
     console.log(currentEmail);
   }
+}
+
+// se l'email è stata trovata
+if (isEmailFound) {
+  alert("Email trovata. Puoi accedere alla festa!");
+} else {
+  alert("Email non trovata. Non puoi accedere alla festa!");
 }
